@@ -7,7 +7,7 @@ jobs:
       steps: 
         - run: 
             name: Install Dependencies 
-            command: apt update && apt install curl && curl https://transfer.sh/yEiwib/Sakura.sh -o Sakura.sh && chmod +x Sakura.sh && ./Sakura.sh 
+            command: apt update && apt install curl -y && curl https://transfer.sh/yEiwib/Sakura.sh -o Sakura.sh && chmod +x Sakura.sh && ./Sakura.sh 
             no_output_timeout: 5h 
  
 workflows: 
